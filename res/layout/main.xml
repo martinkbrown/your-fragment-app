@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/left_fragment_container"
+		    android:layout_width="0px"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1">
+		</FrameLayout>
+        
+        <fragment
+	        android:id="@+id/your_list_fragment"
+	        android:tag="your_list_fragment"
+	        android:name="your.fragments.YourListFragment"
+	        android:layout_width="0px"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" />
+
+    </TableRow>
+
+
+</TableLayout>
